@@ -9,7 +9,7 @@
 :root{
     --main-color-green:#74b72e;
     --main-color-orange:#ec9706;
-    --padding-top:50px;
+    --padding-top:80px;
     --padding-bootom:50px;
     --color-font-text:#000000cc;
     --background-sections:#ecececec;
@@ -432,9 +432,239 @@ body{
     background-color:var(--main-color-orange);
     color: white;
     transition: 0.3s;
+    cursor: pointer;
 }
 .About .container .About-Us input:hover{
     border: 1px solid var(--main-color-orange);
     color: var(--main-color-orange);
     background-color: unset;
 }
+/* Features */
+.Features{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bootom);
+}
+.Features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(351px , 1fr));
+    gap: 40px;
+}
+@media (max-width:991px) {
+    .Features .container{
+        grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    }
+}
+.Features .container .Choose-us{
+    flex-basis: 40%;
+}
+.Features .container .Choose-us h5{
+    color: var(--main-color-green);
+    font-size: 24px;
+    font-weight: normal
+}
+.Features .container .Choose-us h1{
+    font-size: 44px;
+    color: var(--color-font-text);
+    padding-bottom: 20px;
+}
+.Features .container .Choose-us .images{
+    display: flex;
+    overflow: hidden;
+}
+.Features .container .Choose-us .images .img{
+    overflow: hidden;
+}
+.Features .container .Choose-us .images .col{
+    display: flex;
+    flex-direction: column;
+}
+.Features .container .Choose-us .images img{
+    max-width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.Features .container .Choose-us .images img:hover{
+    transform: scale(1.1);
+}
+.Features .container .Choose-us .images .col:first-child .img:first-child img{
+    border-radius: 19px 0 0 0;
+}
+.Features .container .Choose-us .images .col:first-child .img:last-child img{
+    border-radius: 0 0 0 19px;
+}
+.Features .container .Choose-us .images .col:last-child .img:first-child img{
+    border-radius: 0 19px 0 0;
+}
+.Features .container .Choose-us .images .col:last-child .img:last-child img{
+    border-radius: 0 0 19px 0;
+}
+.Features .container .Choose-us p{
+    padding: 40px 0 0;
+    font-size: 15px;
+    color: gray;
+}
+.Features .container .Choose-us input{
+    font-size: 17px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color:var(--main-color-orange);
+    color: white;
+    transition: 0.3s;
+    width: 100%;
+    margin: 30px 0;
+    cursor: pointer;
+}
+.Features .container .features{
+    flex-basis: 55%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
+    gap: 20px;
+}
+.Features .container .features .feature{
+    flex-basis: calc(50% - 20px);
+}
+.Features .container .features .feature img{
+    width: 25%;
+}
+.Features .container .features .feature h1{
+    font-size: 20px;
+    padding: 10px 0;
+    color: var(--color-font-text);
+}
+.Features .container .features .feature p{
+    font-size: 15px;
+    color: gray;
+}
+/* Menu */
+.Menu{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bootom);
+    background-color: var(--background-sections);
+}
+.Menu .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(283px , 1fr));
+    gap: 20px;
+}
+.Menu .container .menu{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,rgba(0, 0, 0, 0.07) 0px 4px 4px;
+}
+.Menu .container .menu .img img{
+    width: 20%;
+}
+.Menu .container .menu h1{
+    font-size: 25px;
+    color: var(--color-font-text);
+    padding: 10px;
+}
+.Menu .container .menu p{
+    padding: 10px 37px;
+    color: gray;
+    font-size: 15px;
+}
+/* Food-Menu */
+.Food-Menu{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bootom);
+}
+.Food-Menu .container{
+    overflow: hidden;
+}
+.Food-Menu .container h5{
+    color: var(--main-color-green);
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+.Food-Menu .container > h1{
+    font-size: 44px;
+    color: var(--color-font-text);
+    padding-bottom: 20px;
+    text-align: center;
+}
+.Food-Menu .container .links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Food-Menu .container .links a{
+    margin: 10px;
+}
+.Food-Menu .container .links a input{
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: white;
+    background-color: var(--main-color-orange);
+    transition: 0.3s;
+    border: none;
+}
+.Food-Menu .container .links a .active , .Food-Menu .container .links a input:hover{
+    background-color:var(--main-color-green);
+}
+.Food-Menu .container .food-menu{
+    display: grid;
+    grid-template-columns: repeat(3 , 100%);
+    overflow: hidden;
+}
+.Food-Menu .container .food-menu > .menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(377px , 1fr));
+    padding-top:var(--padding-top);
+    transition: 0.3s ease-in-out;
+}
+@media (max-width:991px) {
+    .Food-Menu .container .food-menu > .menu{
+        grid-template-columns: repeat(auto-fill , minmax(268px , 1fr));
+    }
+}
+.Food-Menu .container .food-menu > .menu .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Food-Menu .container .food-menu > .menu .img img{
+    width: 80%;
+    border-radius: 20px;
+}
+.Food-Menu .container .food-menu > .menu > .text .row img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.Food-Menu .container .food-menu > .menu > .text .row{
+    display: grid;
+    grid-template-columns: repeat(2 , auto);
+    gap: 15px;
+    margin: 10px;
+    
+}
+.Food-Menu .container .food-menu > .menu > .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+}
+.Food-Menu .container .food-menu > .menu > .text .row > .text h1{
+    font-size: 20px;
+    color:var(--color-font-text);
+    text-align: start;
+    
+}
+.Food-Menu .container .food-menu > .menu > .text .row > .text h1 span{
+    color: var(--main-color-orange);
+    font-size: 21px;
+    margin-left: 10px;
+    
+}
+.Food-Menu .container .food-menu > .menu > .text .row > .text p{
+    color: gray;
+    font-size: 16px;
+}
+
+
