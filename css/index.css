@@ -467,6 +467,11 @@ body{
     color: var(--color-font-text);
     padding-bottom: 20px;
 }
+@media (max-width:991px) {
+    .Features .container .Choose-us h1{
+        font-size: 19px;
+    }
+}
 .Features .container .Choose-us .images{
     display: flex;
     overflow: hidden;
@@ -666,5 +671,324 @@ body{
     color: gray;
     font-size: 16px;
 }
+/* Team */
+.Team{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-top);
+}
+.Team .container > h5{
+    color: var(--main-color-green);
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+.Team .container > h1{
+    font-size: 44px;
+    color: var(--color-font-text);
+    padding-bottom: 20px;
+    text-align: center;
+}
+.Team .container .Master-Chef{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(227px , 1fr));
+    gap: 20px;
+}
+.Team .container .Master-Chef .chef{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,rgba(0, 0, 0, 0.07) 0px 4px 4px;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+.Team .container .Master-Chef .chef .img{
+    position: relative;
+}
 
+.Team .container .Master-Chef .chef:hover .img::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff59;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.Team .container .Master-Chef .chef img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    transition: 1s linear;
+    height: 100%;
+}
+.Team .container .Master-Chef .chef:hover img{
+    top: -7px;
+}
+.Team .container .Master-Chef .chef .icons{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+    
+}
+.Team .container .Master-Chef .chef .icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--main-color-orange);
+    color: white;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: none;
+}
+.Team .container .Master-Chef .chef i:hover {
+    background-color: var(--main-color-green);
+    
+}
+.Team .container .Master-Chef .chef:hover i{
+    display: flex;
+}
+.Team .container .Master-Chef .chef .text{
+    text-align: center;
+    padding: 10px 0;
+}
+.Team .container .Master-Chef .chef .text h1{
+    color: var(--color-font-text);
+    font-size: 21px;
+}
+.Team .container .Master-Chef .chef .text span{
+    color: gray;
+}
+/* Client */
+.Client{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bootom);
+    background-color: var(--background-sections);
+    
+}
+.Client .container .clients{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    gap: 40px;
+}
+.Client .container .client{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,rgba(0, 0, 0, 0.07) 0px 4px 4px;
+}
+.Client .container .client img{
+    border-radius: 50%;
+}
+.Client .container .client p{
+    font-size: 14px;
+    color: gray;
+}
+.Client .container .client h1{
+    font-size: 20px;
+    padding: 14px 0 2px;
+}
+.Client .container .client span{
+    color: gray;
+}
+.Client .container > ul{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.Client .container > ul li{
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color-orange);
+    border-radius: 50%;
+    margin: 7px;
+    
+}
+/* Contact */
+.Contact{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bootom);
+}
+.Contact .container > h5{
+    color: var(--main-color-green);
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+.Contact .container > h1{
+    font-size: 44px;
+    color: var(--color-font-text);
+    padding-bottom: 20px;
+    text-align: center;
+}
+.Contact .container .contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(227px , 1fr));
+    margin: 40px 0;
+    background-color: var(--background-sections);
+    padding: 50px;
+    gap: 40px;
+}
+.Contact .container .contact .col{
+    display: flex;
+}
+.Contact .container .contact .col > i{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--main-color-orange);
+    width: 45px;
+    height: 45px;
+    color: white;
+}
+.Contact .container .contact .col .text{
+    padding: 0 10px;
+}
+.Contact .container .contact .col .text h5{
+    color: var(--main-color-green);
+    font-size: 16px;
+}
+.Contact .container .contact .col span{
+    color: var(--color-font-text);
+    font-size: 15px;
+}
+.Contact .container .contact .col:last-child .text .social-media{
+    padding: 5px 0;
+}
+.Contact .container .contact .col:last-child .text .social-media > i{
+    padding:  0 8px;
+    cursor: pointer;
+    color: var(--main-color-orange);
+}
+.Contact .container .contact .col:last-child .text .social-media > i:hover{
+    color: var(--main-color-green);
+    
+}
+.Contact .container .location{
+    display: flex;
+    gap: 20px;
+}
+@media (max-width:991px) {
+    .Contact .container .location{
+        flex-direction: column;
+    }
+}
+.Contact .container .location .map{
+    flex-basis:45%;
+}
+.Contact .container .location .map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 30px;
+}
+.Contact .container .location form{
+    flex-basis:45%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.Contact .container .location form input , .Contact .container .location form textarea{
+    padding: 10px;
+    border: 1px solid #80808033;
+    font-size: 15px;
+    border-radius: 8px;
+}
+.Contact .container .location form input:last-child{
+    border: none;
+    width: 30%;
+    padding: 15px 28px;
+    color: white;
+    background-color: var(--main-color-orange);
+}
+/* Blog */
+.Blog {
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bootom);
+}
+.Blog .container > h5{
+    color: var(--main-color-green);
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+.Blog .container > h1{
+    font-size: 44px;
+    color: var(--color-font-text);
+    padding-bottom: 20px;
+    text-align: center;
+}
+.Blog .container .Food-Blog{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(377px ,1fr));
+    gap: 20px;
+}
+@media (max-width:640px) {
+    .Blog .container .Food-Blog{
+        grid-template-columns: repeat(auto-fill , minmax(263px ,1fr));
+    }
+}
+.Blog .container .Food-Blog .food-Blog{
+    position: relative;
+}
+.Blog .container .Food-Blog .food-Blog .blog img{
+    max-width: 100%;
+    border-radius: 30px;
+}
+.Blog .container .Food-Blog .food-Blog .text{
+    position: relative;
+    bottom: 40px;
+    background-color: white;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 27px;
+    border-radius: 20px;
+    width: 100%;
+}
+.Blog .container .Food-Blog .food-Blog .text h1{
+    font-size: 20px;
+    color: var(--color-font-text);
+}
+.Blog .container .Food-Blog .food-Blog .text .row-2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:10px 0;
+}
+.Blog .container .Food-Blog .food-Blog .text .row-2 .col i{
+    color: var(--main-color-orange);
+}
+.Blog .container .Food-Blog .food-Blog .text .row-2 .col span{
+    color: gray;
+    font-size: 14px;
+}
+.Blog .container .Food-Blog .food-Blog .text p{
+    font-size: 13px;
+    padding: 15px 0 0 0;
+    color: gray;
+}
+.Blog .container .Food-Blog .food-Blog .text input{
+    padding: 12px 22px;
+    border: none;
+    margin: 10px 0;
+    color: white;
+    background-color: var(--main-color-orange);
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Blog .container .Food-Blog .food-Blog .text input:hover{
+    background-color: unset;
+    color:var(--main-color-orange);
+    border: 2px solid var(--main-color-orange);
+}
