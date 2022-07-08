@@ -39,6 +39,9 @@ body{
     font-family: 'Cairo', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+input:focus , textarea:focus{
+    outline: none;
+}
 .header{
     position: fixed;
     top: 24px;
@@ -59,7 +62,7 @@ body{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    /* padding-top: 50px; */
+    
 }
 @media (max-width:991px) {
     .header .container{
@@ -637,6 +640,9 @@ body{
     width: 80%;
     border-radius: 20px;
 }
+.Food-Menu .container .food-menu > .menu:first-child > .text .row img{
+    border-radius:0;
+}
 .Food-Menu .container .food-menu > .menu > .text .row img{
     width: 80px;
     height: 80px;
@@ -904,7 +910,7 @@ body{
 }
 .Contact .container .location form input:last-child{
     border: none;
-    width: 30%;
+    width: 60%;
     padding: 15px 28px;
     color: white;
     background-color: var(--main-color-orange);
@@ -991,4 +997,108 @@ body{
     background-color: unset;
     color:var(--main-color-orange);
     border: 2px solid var(--main-color-orange);
+}
+/* Footer */
+.Footer{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bootom);
+    background-color: var(--background-sections);
+}
+.Footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(281px , 1fr));
+    gap: 40px;
+}
+.Footer .container .col h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: var(--main-color-orange);
+}
+.Footer .container .col .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Footer .container .col .contact .row i{
+    color: var(--main-color-orange);
+    padding-right: 10px;
+}
+.Footer .container .col .contact .row:last-child{
+    display: flex;
+}
+.Footer .container .col .contact .row:last-child i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--main-color-orange);
+    color: white;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 10px;
+    margin: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Footer .container .col .contact .row:last-child i:hover{
+    background-color: var(--main-color-green);
+}
+.Footer .container .col ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Footer .container .col ul li{
+    position: relative;
+    padding: 0 25px;
+}
+.Footer .container .col ul li::before{
+    content: "\f105";
+    font-family: 'Font Awesome 5 free';
+    position: absolute;
+    font-weight: 600;
+    left: 0;
+    font-size: 15px;
+    color: var(--main-color-orange);
+}
+.Footer .container .col ul a{
+    color: var(--color-font-text);
+    font-size: 16px;
+    transition: 0.3s;
+}
+.Footer .container .col ul a:hover{
+    font-size: 18px;
+    color: var(--main-color-orange);
+}
+.Footer .container .col p{
+    font-size: 15px;
+    color: gray;
+}
+.Footer .container .col .input{
+    position: relative;
+    padding: 10px 0;
+}
+.Footer .container .col .input input:first-child{
+    border: 1px solid var(--main-color-orange);
+    padding: 18px;
+    width: 100%;
+    border-radius: 12px;
+}
+.Footer .container .col .input input:last-child{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25%;
+    padding: 13px;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.Footer .container .col .input input:last-child:hover{
+    background-color: unset;
+    color: var(--main-color-orange);
 }
